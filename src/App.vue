@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-main>
+      <MainPage/>
+    </v-main>
+    <v-footer
+        dark
+        padless
+    >
+      <v-card-text class="py-2 white--text text-center">
+        <strong>Шабашев Иван - </strong>
+        <a class="white--text" href="https://github.com/shabashev-ivan">https://github.com/shabashev-ivan</a>
+      </v-card-text>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainPage from './components/MainPage';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    MainPage,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
